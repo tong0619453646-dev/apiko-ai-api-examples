@@ -82,7 +82,7 @@ bound is higher or cannot be computed), `wait_seconds`. `generate_video` also
 takes `reference_video_seconds` (for the cost check only, never sent).
 
 Lookups, quotes, task checks, balance and uploads are free; generation is billed
-at API prices to the key's balance; failed tasks are refunded by the gateway.
+at API prices to the APIKO account balance; failed tasks are refunded by the gateway.
 
 ### What `check_balance` can and cannot show
 
