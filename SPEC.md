@@ -13,7 +13,7 @@ Shared contract between the MCP server (this repo) and the `/mcp` landing page
   endpoint can mount the same tools.
 - Auth: the user's own APIKO API key in env `APIKO_API_KEY`.
 - Only calls existing public endpoints. No new-api changes.
-- Package name (not published yet): `@apiko/mcp`, bin `apiko-mcp`, Node >= 18.17.
+- Package name (not published yet): `apiko-mcp`, bin `apiko-mcp`, Node >= 18.17.
 
 ## Environment variables
 
@@ -30,20 +30,20 @@ Shared contract between the MCP server (this repo) and the `/mcp` landing page
 Claude Code (CLI; the desktop app's Code tab loads user-scope servers from
 `~/.claude.json` too):
 
-    claude mcp add apiko --scope user -e APIKO_API_KEY=sk-... -- npx -y @apiko/mcp
+    claude mcp add apiko --scope user -e APIKO_API_KEY=sk-... -- npx -y apiko-mcp
 
 Codex (CLI; the ChatGPT desktop app and the IDE extension share
 `~/.codex/config.toml`):
 
-    codex mcp add apiko --env APIKO_API_KEY=sk-... -- npx -y @apiko/mcp
+    codex mcp add apiko --env APIKO_API_KEY=sk-... -- npx -y apiko-mcp
 
     # or ~/.codex/config.toml
     [mcp_servers.apiko]
     command = "npx"
-    args = ["-y", "@apiko/mcp"]
+    args = ["-y", "apiko-mcp"]
     env = { APIKO_API_KEY = "sk-..." }
 
-Before npm publishing, replace `npx -y @apiko/mcp` with
+Before npm publishing, replace `npx -y apiko-mcp` with
 `node /absolute/path/to/apiko-mcp/dist/index.js`. Both command forms were run
 on 2026-10-23 (Claude Code 2.1.309 with `--scope project` in a temp dir, codex-cli
 0.160.0 with a temp `CODEX_HOME`) and produced the expected config entries.

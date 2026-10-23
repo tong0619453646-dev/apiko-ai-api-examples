@@ -1,8 +1,8 @@
 {
-  "name": "@apiko/mcp",
+  "name": "apiko-mcp",
   "version": "0.1.0",
   "description": "MCP server for APIKO (apiko.app): discover models, quote prices, generate images and videos with your own API key.",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "private": true,
   "type": "module",
   "bin": {
@@ -31,5 +31,23 @@
   "devDependencies": {
     "@types/node": "^18.19.130",
     "typescript": "^5.9.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tong0619453646-dev/apiko-ai-api-examples.git",
+    "directory": "mcp"
+  },
+  "homepage": "https://apiko.app/mcp",
+  "bugs": {
+    "url": "https://github.com/tong0619453646-dev/apiko-ai-api-examples/issues"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "apiko",
+    "image-generation",
+    "video-generation",
+    "claude-code",
+    "codex"
+  ]
 }

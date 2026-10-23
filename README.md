@@ -16,7 +16,7 @@ agent to quote first and wait for your approval before every paid call.
 
 ## Install
 
-The npm package `@apiko/mcp` is not published yet. Build from source:
+The npm package `apiko-mcp` is not published yet. Build from source:
 
 ```bash
 git clone <this repo> apiko-mcp
@@ -26,7 +26,7 @@ npm run build        # writes dist/index.js
 ```
 
 In the commands below, replace `node /absolute/path/to/apiko-mcp/dist/index.js`
-with `npx -y @apiko/mcp` once the package is published.
+with `npx -y apiko-mcp` once the package is published.
 
 ### Claude Code (CLI and desktop app)
 
