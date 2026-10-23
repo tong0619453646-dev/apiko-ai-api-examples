@@ -1,0 +1,767 @@
+{
+ "code": 0,
+ "message": "ok",
+ "data": {
+  "models": [
+   {
+    "id": "claude-opus-5-5",
+    "displayName": "Claude Opus 5.5",
+    "provider": "anthropic",
+    "capabilities": [
+     "chat"
+    ],
+    "context": null,
+    "status": "operational",
+    "visibility": "public",
+    "source": "curated",
+    "releasedAt": "2026-09-22",
+    "updatedAt": "2026-09-27T00:00:00Z",
+    "pricing": {
+     "inputPer1M": 0.882352941176,
+     "outputPer1M": 4.4117647058800005,
+     "cachePer1M": 0.0441176470588,
+     "perCall": null,
+     "tiers": [],
+     "contextTiers": [],
+     "currency": "USD"
+    },
+    "endpointTypes": [
+     "anthropic",
+     "openai"
+    ],
+    "name": "claude-opus-5-5",
+    "inputPer1M": 0.882352941176,
+    "outputPer1M": 4.4117647058800005
+   },
+   {
+    "id": "doubao-seedream-5-0-pro",
+    "displayName": "Seedream 5.0 Pro",
+    "provider": "bytedance",
+    "capabilities": [
+     "image"
+    ],
+    "context": null,
+    "status": "operational",
+    "visibility": "public",
+    "source": "curated",
+    "releasedAt": "2026-07-08",
+    "updatedAt": "2026-09-27T00:00:00Z",
+    "pricing": {
+     "inputPer1M": null,
+     "outputPer1M": null,
+     "cachePer1M": null,
+     "perCall": 0.0330882,
+     "tiers": [],
+     "contextTiers": [],
+     "currency": "USD"
+    },
+    "endpointTypes": [
+     "openai"
+    ],
+    "name": "doubao-seedream-5-0-pro",
+    "inputPer1M": null,
+    "outputPer1M": null
+   },
+   {
+    "id": "gpt-6-sol",
+    "displayName": "GPT-6 Sol",
+    "provider": "openai",
+    "capabilities": [
+     "chat"
+    ],
+    "context": null,
+    "status": "operational",
+    "visibility": "public",
+    "source": "curated",
+    "releasedAt": "2026-09-22",
+    "updatedAt": "2026-09-27T00:00:00Z",
+    "pricing": {
+     "inputPer1M": 0.2,
+     "outputPer1M": 1,
+     "cachePer1M": 0.020000000000000004,
+     "perCall": null,
+     "tiers": [],
+     "contextTiers": [
+      {
+       "upTo": 272000,
+       "inputPer1M": 0.2,
+       "outputPer1M": 1,
+       "cachePer1M": 0.02
+      },
+      {
+       "upTo": null,
+       "inputPer1M": 0.4,
+       "outputPer1M": 1.5,
+       "cachePer1M": 0.04
+      }
+     ],
+     "currency": "USD"
+    },
+    "endpointTypes": [
+     "openai"
+    ],
+    "name": "gpt-6-sol",
+    "inputPer1M": 0.2,
+    "outputPer1M": 1
+   },
+   {
+    "id": "gpt-image-2",
+    "displayName": "GPT Image 2",
+    "provider": "openai",
+    "capabilities": [
+     "image"
+    ],
+    "context": null,
+    "status": "operational",
+    "visibility": "public",
+    "source": "curated",
+    "releasedAt": "2026-04-21",
+    "updatedAt": "2026-07-23T00:00:00Z",
+    "pricing": {
+     "inputPer1M": null,
+     "outputPer1M": null,
+     "cachePer1M": null,
+     "perCall": 0.0164706,
+     "tiers": [
+      {
+       "name": "1k",
+       "perCall": 0.0164706
+      },
+      {
+       "name": "2k",
+       "perCall": 0.0176471
+      },
+      {
+       "name": "4k",
+       "perCall": 0.0188235
+      }
+     ],
+     "contextTiers": [],
+     "currency": "USD"
+    },
+    "endpointTypes": [
+     "image-generation",
+     "openai"
+    ],
+    "name": "gpt-image-2",
+    "inputPer1M": null,
+    "outputPer1M": null
+   },
+   {
+    "id": "gpt-image-2.5-flare",
+    "displayName": "GPT Image 2.5 Flare",
+    "provider": "openai",
+    "capabilities": [
+     "image"
+    ],
+    "context": null,
+    "status": "operational",
+    "visibility": "public",
+    "source": "curated",
+    "releasedAt": "2026-09-08",
+    "updatedAt": "2026-09-27T00:00:00Z",
+    "pricing": {
+     "inputPer1M": null,
+     "outputPer1M": null,
+     "cachePer1M": null,
+     "perCall": 0.010353,
+     "tiers": [
+      {
+       "name": "1k",
+       "perCall": 0.010353
+      },
+      {
+       "name": "2k",
+       "perCall": 0.020846
+      },
+      {
+       "name": "4k",
+       "perCall": 0.034534
+      }
+     ],
+     "tokenImage": {
+      "textInputPer1M": 3.8602941,
+      "imageInputPer1M": 6.1764706,
+      "outputPer1M": 23.1617647
+     },
+     "contextTiers": [],
+     "currency": "USD"
+    },
+    "endpointTypes": [
+     "image-generation",
+     "openai"
+    ],
+    "name": "gpt-image-2.5-flare",
+    "inputPer1M": null,
+    "outputPer1M": null
+   },
+   {
+    "id": "gpt-image-2.5-sunburst",
+    "displayName": "GPT Image 2.5 Sunburst",
+    "provider": "openai",
+    "capabilities": [
+     "image"
+    ],
+    "context": null,
+    "status": "operational",
+    "visibility": "public",
+    "source": "curated",
+    "releasedAt": "2026-09-08",
+    "updatedAt": "2026-09-27T00:00:00Z",
+    "pricing": {
+     "inputPer1M": null,
+     "outputPer1M": null,
+     "cachePer1M": null,
+     "perCall": 0.010353,
+     "tiers": [
+      {
+       "name": "1k",
+       "perCall": 0.010353
+      },
+      {
+       "name": "2k",
+       "perCall": 0.020846
+      },
+      {
+       "name": "4k",
+       "perCall": 0.034534
+      }
+     ],
+     "tokenImage": {
+      "textInputPer1M": 3.8602941,
+      "imageInputPer1M": 6.1764706,
+      "outputPer1M": 23.1617647
+     },
+     "contextTiers": [],
+     "currency": "USD"
+    },
+    "endpointTypes": [
+     "image-generation",
+     "openai"
+    ],
+    "name": "gpt-image-2.5-sunburst",
+    "inputPer1M": null,
+    "outputPer1M": null
+   },
+   {
+    "id": "kling-4.0",
+    "displayName": "Kling 4.0",
+    "provider": "kuaishou",
+    "capabilities": [
+     "video"
+    ],
+    "context": null,
+    "status": "operational",
+    "visibility": "public",
+    "source": "curated",
+    "releasedAt": "2026-10-15",
+    "updatedAt": "2026-10-22T00:00:00Z",
+    "pricing": {
+     "inputPer1M": null,
+     "outputPer1M": null,
+     "cachePer1M": null,
+     "perCall": null,
+     "tiers": [],
+     "perSecondTiers": [
+      {
+       "name": "720p",
+       "perSecond": 0.0471
+      },
+      {
+       "name": "1080p",
+       "perSecond": 0.0705
+      }
+     ],
+     "contextTiers": [],
+     "currency": "USD"
+    },
+    "endpointTypes": [
+     "openai"
+    ],
+    "name": "kling-4.0",
+    "inputPer1M": null,
+    "outputPer1M": null
+   },
+   {
+    "id": "nano-banana-2",
+    "displayName": "Nano Banana 2",
+    "provider": "google",
+    "capabilities": [
+     "image"
+    ],
+    "context": null,
+    "status": "operational",
+    "visibility": "public",
+    "source": "curated",
+    "releasedAt": "2026-02-26",
+    "updatedAt": "2026-07-23T00:00:00Z",
+    "pricing": {
+     "inputPer1M": null,
+     "outputPer1M": null,
+     "cachePer1M": null,
+     "perCall": 0.0144118,
+     "tiers": [
+      {
+       "name": "1k",
+       "perCall": 0.0144118
+      },
+      {
+       "name": "2k",
+       "perCall": 0.0154412
+      },
+      {
+       "name": "4k",
+       "perCall": 0.0164706
+      }
+     ],
+     "contextTiers": [],
+     "currency": "USD"
+    },
+    "endpointTypes": [
+     "openai",
+     "image-generation"
+    ],
+    "name": "nano-banana-2",
+    "inputPer1M": null,
+    "outputPer1M": null
+   },
+   {
+    "id": "nano-banana-2.1",
+    "displayName": "Nano Banana 2.1",
+    "provider": "google",
+    "capabilities": [
+     "image"
+    ],
+    "context": null,
+    "status": "operational",
+    "visibility": "public",
+    "source": "curated",
+    "releasedAt": "2026-10-06",
+    "updatedAt": "2026-10-07T00:00:00Z",
+    "pricing": {
+     "inputPer1M": null,
+     "outputPer1M": null,
+     "cachePer1M": null,
+     "perCall": 0.0138971,
+     "tiers": [
+      {
+       "name": "1k",
+       "perCall": 0.0138971
+      },
+      {
+       "name": "2k",
+       "perCall": 0.0154412
+      },
+      {
+       "name": "4k",
+       "perCall": 0.0185294
+      }
+     ],
+     "contextTiers": [],
+     "currency": "USD"
+    },
+    "endpointTypes": [
+     "openai",
+     "image-generation"
+    ],
+    "name": "nano-banana-2.1",
+    "inputPer1M": null,
+    "outputPer1M": null
+   },
+   {
+    "id": "nano-banana-pro",
+    "displayName": "Nano Banana Pro",
+    "provider": "google",
+    "capabilities": [
+     "image"
+    ],
+    "context": null,
+    "status": "operational",
+    "visibility": "public",
+    "source": "curated",
+    "releasedAt": "2025-11-20",
+    "updatedAt": "2026-07-23T00:00:00Z",
+    "pricing": {
+     "inputPer1M": null,
+     "outputPer1M": null,
+     "cachePer1M": null,
+     "perCall": 0.0164706,
+     "tiers": [
+      {
+       "name": "1k",
+       "perCall": 0.0164706
+      },
+      {
+       "name": "2k",
+       "perCall": 0.0176471
+      },
+      {
+       "name": "4k",
+       "perCall": 0.0188235
+      }
+     ],
+     "contextTiers": [],
+     "currency": "USD"
+    },
+    "endpointTypes": [
+     "openai",
+     "image-generation"
+    ],
+    "name": "nano-banana-pro",
+    "inputPer1M": null,
+    "outputPer1M": null
+   },
+   {
+    "id": "seedance-2.0",
+    "displayName": "Seedance 2.0",
+    "provider": "bytedance",
+    "capabilities": [
+     "video"
+    ],
+    "context": null,
+    "status": "operational",
+    "visibility": "public",
+    "source": "curated",
+    "releasedAt": "2026-02-09",
+    "updatedAt": "2026-10-06T00:00:00Z",
+    "pricing": {
+     "inputPer1M": null,
+     "outputPer1M": null,
+     "cachePer1M": null,
+     "perCall": null,
+     "tiers": [],
+     "perSecondTiers": [
+      {
+       "name": "480p",
+       "perSecond": 0.078002,
+       "videoInputPerSecond": 0.048
+      },
+      {
+       "name": "720p",
+       "perSecond": 0.138996,
+       "videoInputPerSecond": 0.084996
+      },
+      {
+       "name": "1080p",
+       "perSecond": 0.328001,
+       "videoInputPerSecond": 0.199017
+      }
+     ],
+     "contextTiers": [],
+     "currency": "USD"
+    },
+    "endpointTypes": [
+     "openai"
+    ],
+    "name": "seedance-2.0",
+    "inputPer1M": null,
+    "outputPer1M": null
+   },
+   {
+    "id": "seedance-2.5",
+    "displayName": "Seedance 2.5",
+    "provider": "bytedance",
+    "capabilities": [
+     "video"
+    ],
+    "context": null,
+    "status": "operational",
+    "visibility": "public",
+    "source": "curated",
+    "releasedAt": "2026-07-31",
+    "updatedAt": "2026-10-07T00:00:00Z",
+    "pricing": {
+     "inputPer1M": null,
+     "outputPer1M": null,
+     "cachePer1M": null,
+     "perCall": null,
+     "tiers": [],
+     "perSecondTiers": [
+      {
+       "name": "480p",
+       "perSecond": 0.113993,
+       "videoInputPerSecond": 0.069001
+      },
+      {
+       "name": "720p",
+       "perSecond": 0.21101,
+       "videoInputPerSecond": 0.127008
+      },
+      {
+       "name": "1080p",
+       "perSecond": 0.494991,
+       "videoInputPerSecond": 0.296023
+      }
+     ],
+     "contextTiers": [],
+     "currency": "USD"
+    },
+    "endpointTypes": [
+     "openai"
+    ],
+    "name": "seedance-2.5",
+    "inputPer1M": null,
+    "outputPer1M": null
+   },
+   {
+    "id": "wan3.0-image-to-video",
+    "displayName": "Wan 3.0 Image-to-Video",
+    "provider": "alibaba",
+    "capabilities": [
+     "video"
+    ],
+    "context": null,
+    "status": "operational",
+    "visibility": "public",
+    "source": "curated",
+    "releasedAt": "2026-08-06",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "pricing": {
+     "inputPer1M": null,
+     "outputPer1M": null,
+     "cachePer1M": null,
+     "perCall": null,
+     "tiers": [],
+     "perSecondTiers": [
+      {
+       "name": "480p",
+       "perSecond": 0.0476471
+      },
+      {
+       "name": "720p",
+       "perSecond": 0.075
+      },
+      {
+       "name": "1080p",
+       "perSecond": 0.0794118
+      }
+     ],
+     "contextTiers": [],
+     "currency": "USD"
+    },
+    "endpointTypes": [
+     "openai"
+    ],
+    "name": "wan3.0-image-to-video",
+    "inputPer1M": null,
+    "outputPer1M": null
+   },
+   {
+    "id": "wan3.0-prime-image-to-video",
+    "displayName": "Wan 3.0 Prime Image-to-Video",
+    "provider": "alibaba",
+    "capabilities": [
+     "video"
+    ],
+    "context": null,
+    "status": "operational",
+    "visibility": "public",
+    "source": "curated",
+    "releasedAt": "2026-08-20",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "pricing": {
+     "inputPer1M": null,
+     "outputPer1M": null,
+     "cachePer1M": null,
+     "perCall": null,
+     "tiers": [],
+     "perSecondTiers": [
+      {
+       "name": "480p",
+       "perSecond": 0.0529412
+      },
+      {
+       "name": "720p",
+       "perSecond": 0.0838235
+      },
+      {
+       "name": "1080p",
+       "perSecond": 0.0882353
+      }
+     ],
+     "contextTiers": [],
+     "currency": "USD"
+    },
+    "endpointTypes": [
+     "openai"
+    ],
+    "name": "wan3.0-prime-image-to-video",
+    "inputPer1M": null,
+    "outputPer1M": null
+   },
+   {
+    "id": "wan3.0-prime-reference-video",
+    "displayName": "Wan 3.0 Prime Reference-to-Video",
+    "provider": "alibaba",
+    "capabilities": [
+     "video"
+    ],
+    "context": null,
+    "status": "operational",
+    "visibility": "public",
+    "source": "curated",
+    "releasedAt": "2026-08-20",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "pricing": {
+     "inputPer1M": null,
+     "outputPer1M": null,
+     "cachePer1M": null,
+     "perCall": null,
+     "tiers": [],
+     "perSecondTiers": [
+      {
+       "name": "480p",
+       "perSecond": 0.0529412
+      },
+      {
+       "name": "720p",
+       "perSecond": 0.0838235
+      },
+      {
+       "name": "1080p",
+       "perSecond": 0.0882353
+      }
+     ],
+     "contextTiers": [],
+     "currency": "USD"
+    },
+    "endpointTypes": [
+     "openai"
+    ],
+    "name": "wan3.0-prime-reference-video",
+    "inputPer1M": null,
+    "outputPer1M": null
+   },
+   {
+    "id": "wan3.0-prime-text-to-video",
+    "displayName": "Wan 3.0 Prime Text-to-Video",
+    "provider": "alibaba",
+    "capabilities": [
+     "video"
+    ],
+    "context": null,
+    "status": "operational",
+    "visibility": "public",
+    "source": "curated",
+    "releasedAt": "2026-08-20",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "pricing": {
+     "inputPer1M": null,
+     "outputPer1M": null,
+     "cachePer1M": null,
+     "perCall": null,
+     "tiers": [],
+     "perSecondTiers": [
+      {
+       "name": "480p",
+       "perSecond": 0.0529412
+      },
+      {
+       "name": "720p",
+       "perSecond": 0.0838235
+      },
+      {
+       "name": "1080p",
+       "perSecond": 0.0882353
+      }
+     ],
+     "contextTiers": [],
+     "currency": "USD"
+    },
+    "endpointTypes": [
+     "openai"
+    ],
+    "name": "wan3.0-prime-text-to-video",
+    "inputPer1M": null,
+    "outputPer1M": null
+   },
+   {
+    "id": "wan3.0-reference-video",
+    "displayName": "Wan 3.0 Reference-to-Video",
+    "provider": "alibaba",
+    "capabilities": [
+     "video"
+    ],
+    "context": null,
+    "status": "operational",
+    "visibility": "public",
+    "source": "curated",
+    "releasedAt": "2026-08-06",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "pricing": {
+     "inputPer1M": null,
+     "outputPer1M": null,
+     "cachePer1M": null,
+     "perCall": null,
+     "tiers": [],
+     "perSecondTiers": [
+      {
+       "name": "480p",
+       "perSecond": 0.0476471
+      },
+      {
+       "name": "720p",
+       "perSecond": 0.075
+      },
+      {
+       "name": "1080p",
+       "perSecond": 0.0794118
+      }
+     ],
+     "contextTiers": [],
+     "currency": "USD"
+    },
+    "endpointTypes": [
+     "openai"
+    ],
+    "name": "wan3.0-reference-video",
+    "inputPer1M": null,
+    "outputPer1M": null
+   },
+   {
+    "id": "wan3.0-text-to-video",
+    "displayName": "Wan 3.0 Text-to-Video",
+    "provider": "alibaba",
+    "capabilities": [
+     "video"
+    ],
+    "context": null,
+    "status": "operational",
+    "visibility": "public",
+    "source": "curated",
+    "releasedAt": "2026-08-06",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "pricing": {
+     "inputPer1M": null,
+     "outputPer1M": null,
+     "cachePer1M": null,
+     "perCall": null,
+     "tiers": [],
+     "perSecondTiers": [
+      {
+       "name": "480p",
+       "perSecond": 0.0476471
+      },
+      {
+       "name": "720p",
+       "perSecond": 0.075
+      },
+      {
+       "name": "1080p",
+       "perSecond": 0.0794118
+      }
+     ],
+     "contextTiers": [],
+     "currency": "USD"
+    },
+    "endpointTypes": [
+     "openai"
+    ],
+    "name": "wan3.0-text-to-video",
+    "inputPer1M": null,
+    "outputPer1M": null
+   }
+  ],
+  "total": 18
+ }
+}
