@@ -19,6 +19,15 @@
 
 Any model id listed on https://apiko.app/models works, for example `gpt-6-astra`, `claude-sonnet-5-5`, `gemini-3.5-flash` or `deepseek-v4-flash`.
 
+## MCP server for Claude Code and Codex
+
+[`mcp/`](mcp/) is the APIKO MCP server (npm package `apiko-mcp`). It lets Claude Code and Codex find image and video models, quote the cost, generate, and follow the task, all from the chat. Setup and tools: [mcp/README.md](mcp/README.md) and https://apiko.app/mcp.
+
+```bash
+claude mcp add apiko --scope user -e APIKO_API_KEY=sk-... -- npx -y apiko-mcp
+codex mcp add apiko --env APIKO_API_KEY=sk-... -- npx -y apiko-mcp
+```
+
 ## LangChain and LlamaIndex
 
 ```python
