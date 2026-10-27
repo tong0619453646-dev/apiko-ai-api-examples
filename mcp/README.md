@@ -16,7 +16,8 @@ agent to quote first and wait for your approval before every paid call.
 
 ## Install
 
-The npm package `apiko-mcp` is not published yet. Build from source:
+The server is published on npm as [`apiko-mcp`](https://www.npmjs.com/package/apiko-mcp)
+and runs with `npx -y apiko-mcp`. To run it from source instead:
 
 ```bash
 git clone <this repo> apiko-mcp
@@ -25,13 +26,13 @@ npm install
 npm run build        # writes dist/index.js
 ```
 
-In the commands below, replace `node /absolute/path/to/apiko-mcp/dist/index.js`
-with `npx -y apiko-mcp` once the package is published.
+and replace `npx -y apiko-mcp` below with
+`node /absolute/path/to/apiko-mcp/dist/index.js`.
 
 ### Claude Code (CLI and desktop app)
 
 ```bash
-claude mcp add apiko --scope user -e APIKO_API_KEY=sk-... -- node /absolute/path/to/apiko-mcp/dist/index.js
+claude mcp add apiko --scope user -e APIKO_API_KEY=sk-... -- npx -y apiko-mcp
 ```
 
 `--scope user` stores the server in `~/.claude.json`, which the Claude Code
@@ -41,7 +42,7 @@ desktop app (Code tab) also loads. Run `/mcp` in Claude Code to check that
 ### Codex (CLI, IDE extension, desktop app)
 
 ```bash
-codex mcp add apiko --env APIKO_API_KEY=sk-... -- node /absolute/path/to/apiko-mcp/dist/index.js
+codex mcp add apiko --env APIKO_API_KEY=sk-... -- npx -y apiko-mcp
 ```
 
 or add this to `~/.codex/config.toml`, which the Codex CLI, the IDE extension
@@ -49,8 +50,8 @@ and the ChatGPT desktop app share:
 
 ```toml
 [mcp_servers.apiko]
-command = "node"
-args = ["/absolute/path/to/apiko-mcp/dist/index.js"]
+command = "npx"
+args = ["-y", "apiko-mcp"]
 env = { APIKO_API_KEY = "sk-..." }
 ```
 

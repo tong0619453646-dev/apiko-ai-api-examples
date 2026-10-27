@@ -1,0 +1,24 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.tong0619453646-dev/apiko-mcp",
+  "title": "APIKO",
+  "description": "Look up APIKO image and video models, quote prices, generate media and track spend.",
+  "websiteUrl": "https://apiko.app/mcp",
+  "repository": {
+    "url": "https://github.com/tong0619453646-dev/apiko-ai-api-examples",
+    "source": "github",
+    "subfolder": "mcp"
+  },
+  "version": "0.1.1",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "apiko-mcp",
+      "version": "0.1.1",
+      "transport": { "type": "stdio" },
+      "environmentVariables": [
+        { "name": "APIKO_API_KEY", "description": "Your APIKO API key from https://apiko.app/dashboard/apikeys", "isRequired": true, "isSecret": true }
+      ]
+    }
+  ]
+}

@@ -1,7 +1,8 @@
 {
   "name": "apiko-mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "MCP server for APIKO (apiko.app): discover models, quote prices, generate images and videos with your own API key.",
+  "mcpName": "io.github.tong0619453646-dev/apiko-mcp",
   "license": "MIT",
   "type": "module",
   "bin": {
