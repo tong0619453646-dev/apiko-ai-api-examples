@@ -4,6 +4,17 @@ description: Generate or edit images and generate videos through the APIKO API (
 metadata:
   author: APIKO
   version: "1.0"
+  openclaw:
+    requires:
+      env:
+        - APIKO_API_KEY
+      bins:
+        - python3
+    primaryEnv: APIKO_API_KEY
+    envVars:
+      - name: APIKO_BASE_URL
+        required: false
+        description: Override the API host. Defaults to https://api.apiko.app and must be HTTPS.
 ---
 
 # APIKO image and video generation
