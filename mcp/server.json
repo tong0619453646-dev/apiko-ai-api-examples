@@ -9,12 +9,12 @@
     "source": "github",
     "subfolder": "mcp"
   },
-  "version": "0.1.1",
+  "version": "0.1.2",
   "packages": [
     {
       "registryType": "npm",
       "identifier": "apiko-mcp",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "transport": { "type": "stdio" },
       "environmentVariables": [
         { "name": "APIKO_API_KEY", "description": "Your APIKO API key from https://apiko.app/dashboard/apikeys", "isRequired": true, "isSecret": true }

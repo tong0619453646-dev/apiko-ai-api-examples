@@ -1,6 +1,6 @@
 {
   "name": "apiko-mcp",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "MCP server for APIKO (apiko.app): discover models, quote prices, generate images and videos with your own API key.",
   "mcpName": "io.github.tong0619453646-dev/apiko-mcp",
   "license": "MIT",
@@ -48,6 +48,8 @@
     "image-generation",
     "video-generation",
     "claude-code",
-    "codex"
+    "codex",
+    "cursor",
+    "claude-desktop"
   ]
 }

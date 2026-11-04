@@ -1,13 +1,31 @@
 # APIKO MCP server
 
-Use [APIKO](https://apiko.app) image and video models from Claude Code and Codex.
-The server runs locally over stdio with your own APIKO API key: the agent can
-look up models and request fields, quote a list price, generate images and
-videos, follow tasks, check what the key has spent, and upload reference
-images.
+Use [APIKO](https://apiko.app) image and video models from Claude Code, Codex,
+Cursor, Claude Desktop and other MCP clients. The server runs locally over
+stdio with your own APIKO API key: the agent can look up models and request
+fields, quote a list price, generate images and videos, follow tasks, check
+what the key has spent, and upload reference images.
 
 Generation is billed to your APIKO balance at API prices. The server tells the
 agent to quote first and wait for your approval before every paid call.
+
+Overview, supported models and prices: [APIKO MCP server](https://apiko.app/mcp).
+
+## Works with
+
+Any client that can start a local stdio MCP server can run `npx -y apiko-mcp`.
+
+| Client | How to add it | Tested by us |
+|---|---|---|
+| Claude Code (CLI and desktop app) | `claude mcp add` ([below](#claude-code-cli-and-desktop-app)) | yes |
+| Codex (CLI, IDE extension, desktop app) | `codex mcp add` or `~/.codex/config.toml` ([below](#codex-cli-ide-extension-desktop-app)) | yes |
+| Cursor | `~/.cursor/mcp.json` ([below](#cursor)) | config follows Cursor's docs |
+| Claude Desktop | `claude_desktop_config.json` ([below](#claude-desktop)) | config follows the MCP docs |
+| Other stdio clients (Windsurf, Cline, VS Code agent mode, ...) | command `npx`, args `-y apiko-mcp`, env `APIKO_API_KEY` | no |
+
+The rows marked "follows the docs" use each client's documented `mcpServers`
+format with the same command that is tested in Claude Code and Codex. If one of
+them does not work for you, please open an issue.
 
 ## Requirements
 
@@ -53,6 +71,42 @@ and the ChatGPT desktop app share:
 command = "npx"
 args = ["-y", "apiko-mcp"]
 env = { APIKO_API_KEY = "sk-..." }
+```
+
+### Cursor
+
+Add this to `~/.cursor/mcp.json` (all projects) or `.cursor/mcp.json` in a
+project root:
+
+```json
+{
+  "mcpServers": {
+    "apiko": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "apiko-mcp"],
+      "env": { "APIKO_API_KEY": "sk-..." }
+    }
+  }
+}
+```
+
+### Claude Desktop
+
+Settings → Developer → Edit Config opens `claude_desktop_config.json`
+(`~/Library/Application Support/Claude/` on macOS,
+`%APPDATA%\Claude\` on Windows). Add the server and restart the app:
+
+```json
+{
+  "mcpServers": {
+    "apiko": {
+      "command": "npx",
+      "args": ["-y", "apiko-mcp"],
+      "env": { "APIKO_API_KEY": "sk-..." }
+    }
+  }
+}
 ```
 
 If a desktop app reports that `node` or `npx` cannot be found, use the full
